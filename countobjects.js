@@ -33,6 +33,7 @@ function myFunction(item, index, arr) {
 }
 function getCount(objects) {
     var arrLength = objects.length;
+	var totalCount=0;
     console.log(objects[3].y);
     return arrLength;
 }
