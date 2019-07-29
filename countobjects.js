@@ -32,10 +32,15 @@ function myFunction(item, index, arr) {
     arr[index] = item * 10;
 }
 function getCount(objects) {
+    var totalCount = 0;
     var arrLength = objects.length;
-	var totalCount=0;
-    console.log(objects[3].y);
-    return arrLength;
+    for (var i = 0; i < arrLength;i++){
+        if (objects[i].x == objects[i].y) {
+            totalCount++;
+        }
+    }
+
+    return totalCount;
 }
 
 
